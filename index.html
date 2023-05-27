@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websayfa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan&family=Chivo+Mono:ital,wght@1,100&family=Electrolize&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top pl-3 pr-3">
+      <div class="container-fluid">
+        <a class="navbar-brand " style="font-family: 'Rubik Puddles', cursive; font-size: 40px; color: rgb(0, 200, 255); " href="#">Udemig</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#dersler">Neler Öğreneceksin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accordionFlushExample">Sorular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#egitmenler">Eğitmenler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iletisim">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Tanıtım Alanı-1 -->
+    <div class="container-fluid">
+      <div class="row bg-dark text-white position-relative  " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <h5 class="mt-0 " style="font-size: 30px;" >Bir <span style="color: rgb(220, 163, 47); font-size: 30px; ">React Geliştiricisi </span>olma!</h5>
+          <p style="font-family: serif; align-items: center; justify-content: center; width: 60%; font-size: 20px;">Another instance of placeholder content for this other custom component. It is intended to mimic what
+            some real-world content would look like, and we're using it here to give the component a bit of body and
+            size.</p>
+            <!--KAYIT BUTTONU VE SAYFASI-->
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kayıt Ol</button> 
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" style="color: black; "  id="exampleModalLabel">KAYIT FORMU</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body " style="color: black;  ">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Adınız-Soyadınız:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Mail Adresiniz:</label>
+                        <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Telefon No:</label>
+                        <input type="tel" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Mesaj:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Gönder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+          <img src="img/resim1.jpg" class="w-100 " alt="..." width="100" height="400" >
+        </div>
+      </div>
+    </div>
+
+
+    <!--KAYIT OL ALANI-->
+      
+    <div class="input-group pl-5 pt-3 bg-primary">
+        <p class="text-xl-start fs-1 ">Kayıt Ol</p>
+        
+      </div>
+      
+      <div class="input-group p-5 bg-primary">
+        <input type="text" class="form-control" placeholder="Email" aria-label="E" aria-describedby="button-addon2">
+        <button class="btn btn-dark" type="button" id="button-addon2">Button</button>
+      </div>
+
+      <!--KARTLAR-->
+      <div class="row justify-content-center">
+        <div class="card m-5 text-bg-dark" style="width: 400px; height: 300px; display: flex; justify-content: center; align-items: center;">
+            <i class="fa-sharp fa-solid fa-laptop mt-5 fs-2"></i>
+            <h5 class="card-title pt-2">Sanal</h5>
+            <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary mb-5">Daha Fazla Oku</a>
+          </div>
+          
+        <div class="card m-5 text-bg-secondary" style="width: 400px; height: 300px; display: flex; justify-content: center; align-items: center;">
+          <i class="fa-regular fa-user mt-5 fs-2"></i>
+          <h5 class="card-title pt-2">Capraz</h5>
+          <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-dark mb-5">Daha Fazla Oku</a>
+        </div>
+        <div class="card m-5 text-bg-dark " style="width: 400px; height: 300px; display: flex; justify-content: center; align-items: center;">
+          <i class="fa-solid fa-users mt-5 fs-2"></i>
+          <h5 class="card-title pt-2">Birebir</h5>
+          <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary mb-5">Daha Fazla Oku</a>
+        </div>
+      </div>
+
+      <!--DERS 1-->
+      
+      <section class="p-5" id="dersler">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-md ml-5 mb-5">
+                    <img src="img/resim2.png" alt="" width="80%">
+                </div>
+                <div class="col-md p-5">
+                    <h2 class="fs-2 fw-7">Temelleri Öğren</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, 
+                        odit explicabo  nihil
+                         ratione reprehenderit obcaecati deserunt enim laborum? Nisi, amet maiores?
+                    </p>
+                     <p>Necessitatibus debitis eveniet esse sit deserunt. Saepe excepturi, dolorem debitis
+                        tempore ab inventore illo porro d, officia, eos vel, quaerat laborum quas hic facilis accusantium nam enim ad!</p>
+
+                       
+                            <a href="#" class="btn btn-light mt-3"><i class="fa-solid fa-chevron-right"></i> Daha Fazla Oku...</a>
+                         
+                          
+                        
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--DERS 2-->
+
+      <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                
+                <div class="col-md p-5">
+                    <h2 class="fs-2 fw-7">React Öğren</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, 
+                        odit explicabo  nihil
+                         ratione reprehenderit obcaecati deserunt enim laborum? Nisi, amet maiores?
+                    </p>
+                     <p>Necessitatibus debitis eveniet esse sit deserunt. Saepe excepturi, dolorem debitis
+                        tempore ab inventore illo porro d, officia, eos vel, quaerat laborum quas hic facilis accusantium nam enim ad!</p>
+                    <a href="#" class="btn btn-light mt-3"><i class="fa-solid fa-chevron-right"></i> Daha Fazla Oku...</a>
+                            
+                </div>
+                <div class="col-md ml-5 mb-5">
+                    <img src="img/resim3.png" alt="" width="80%">
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!--SIK SORULAN SORULAR-->
+
+      <div class="accordion accordion-flush p-5 align-items-center justify-content-between" id="accordionFlushExample">
+        <p class="text-uppercase  " style="font-size: 20px; font-weight: 700; text-align: center;">Sık Sorulan Sorular</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              En Yoğun Saatler
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Saat Araalıkları
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethre" aria-expanded="false" aria-controls="flush-collapseTwo">
+               Eğitim Durumu
+              </button>
+            </h2>
+            <div id="flush-collapsethre" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Örgün Eğitim
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+              Ücretler
+            </button>
+          </h2>
+          <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      <!--Eğitmenler-->
+      <div id="egitmenler" class="row justify-content-center bg-primary text-white "  >
+        <h3 class=" mt-5" style="font-size: 32px; font-weight: 700; text-align: center;">Eğitmenlermiz</h3>
+        <p class=" mt-3"style="font-size: 20px; font-weight: 300; text-align: center;">Eğitimenlerimiz 10 yılı aşkın süredir bu alanda çalışmaktadır.</p>
+        <div class="card m-3 text-bg-dark" style="width: 350px; height: 420px; display: flex; justify-content: center; align-items: center;">
+            <img src="img/profil.jpg" alt="" width="150" height="150" style="margin-top: 40px; border-radius: 50%;">
+            <h5 class="card-title pt-2">Hasan YALSIZ</h5>
+            <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="" style="display: flex; gap: 10px; ;">
+              <i class="fa-brands fa-facebook text-primary"></i>
+              <i class="fa-brands fa-instagram text-warning"></i>
+              <i class="fa-brands fa-twitter text-primary"></i>
+              <i class="fa-brands fa-linkedin text-primary"></i>
+            </div>
+          </div>
+          
+          <div class="card m-3 text-bg-dark" style="width: 350px; height: 420px; display: flex; justify-content: center; align-items: center;">
+            <img src="img/resim.jpg" alt="" width="150" height="150" style="margin-top: 30px; border-radius: 50%;">
+            <h5 class="card-title pt-2">Mehmet POLAT</h5>
+            <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="" style="display: flex; gap: 10px; ;">
+              <i class="fa-brands fa-facebook text-primary"></i>
+              <i class="fa-brands fa-instagram text-warning"></i>
+              <i class="fa-brands fa-twitter text-primary"></i>
+              <i class="fa-brands fa-linkedin text-primary"></i>
+            </div>
+          </div>
+          <div class="card m-3 text-bg-dark" style="width: 350px; height: 420px; display: flex; justify-content: center; align-items: center;">
+            <img src="img/profil.jpg" alt="" width="150" height="150" style="margin-top: 30px; border-radius: 50%;">
+            <h5 class="card-title pt-2">Hasan YALSIZ</h5>
+            <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="" style="display: flex; gap: 10px; ;">
+              <i class="fa-brands fa-facebook text-primary"></i>
+              <i class="fa-brands fa-instagram text-warning"></i>
+              <i class="fa-brands fa-twitter text-primary"></i>
+              <i class="fa-brands fa-linkedin text-primary"></i>
+            </div>
+          </div>
+          <div class="card m-3 text-bg-dark" style="width: 350px; height: 420px; display: flex; justify-content: center; align-items: center;">
+            <img src="img/resim.jpg" alt="" width="150" height="150" style="margin-top: 30px; border-radius: 50%;">
+            <h5 class="card-title pt-2">Mehmet POLAT</h5>
+            <p class="card-text pt-4 pl-5 pr-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="" style="display: flex; gap: 10px; ;">
+              <i class="fa-brands fa-facebook text-primary"></i>
+              <i class="fa-brands fa-instagram text-warning"></i>
+              <i class="fa-brands fa-twitter text-primary"></i>
+              <i class="fa-brands fa-linkedin text-primary"></i>
+            </div>
+          </div>
+      </div>
+
+      <!--İLETİŞİM-->
+
+      <section id="iletisim" class="p-5 ">
+        <div class="container">
+            <div class="row align-items-center justify-content-between ">
+                
+                <div class="col-md p-5">
+                    <h2 class="fs-2 fw-7 mb-3 mr-1">İletişim Bilgileri</h2>
+                    <ul class="list-group pl-11 pr-11">
+                      <li class="list-group-item"><span style="font-size: 20px; font-weight: 700;">Ana Konum:</span> İstanbul</li>
+                      <li class="list-group-item"><span style="font-size: 20px; font-weight: 700;">Kayıt Numarası:</span> 555 555 555</li>
+                      <li class="list-group-item"><span style="font-size: 20px; font-weight: 700;">Öğrenci İşleri:</span> 444 444 444</li>
+                      <li class="list-group-item"><span style="font-size: 20px; font-weight: 700;">Kayıt Maili:</span> İstanbul@gmail.com</li>
+                      <li class="list-group-item"><span style="font-size: 20px; font-weight: 700;">Adres:</span> İstanbul/Beşiktaş</li>
+                    </ul>
+                </div>
+                <div class="col-md ml-5 mb-5 mr-3">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770871.9905629513!2d27.76369061900519!3d40.99858587335479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1685136144738!5m2!1str!2str" width="600" height="450" style="border:0; margin-right: 50px; margin-top: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+
+      <footer class="footer bg-dark d-flex align-items-center justify-content-center" style="height: 100px;">
+        <p class="" style="color: white;">Tüm Haklar © 2023 MCS tarafından saklı | <SPan style="color: blue;">Udemig</SPan></p>
+      </footer>
+      
+
+
+
+      
+     
+      
+
+      
+      
+      
+      
+
+
+      
+      
+     
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+</html>

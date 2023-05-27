@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Bebas+Neue&family=Chivo+Mono:ital,wght@1,100&family=Electrolize&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    content: "";
+    height: 100px;
+    
+}
+@media (max-width: 991.98px) { /* Tablet boyutunda (md ve daha küçük) */
+    .row .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+    
+    .row .col-md-6 img {
+        display: none;
+    }
+}
+h5{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
