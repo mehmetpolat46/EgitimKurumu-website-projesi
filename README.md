@@ -17,4 +17,4 @@ Bu proje, şık ve kullanışlı bir eğitim sitesi tasarımını içermektedir.
 - CSS
 - JavaScript
 
-# EgitimKurumu-website-projesi
+![Eğitim Kurumu  Site Projesi](udemig.gif)
